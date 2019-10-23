@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Recibo de pago"
+    android:textAlignment="center"
+    android:textSize="30dp"
+    android:layout_marginTop="7dp"
+    android:textColor="#DF2DB9"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripcion"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtDescripcion"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Monto"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtMonto"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de vencimiento"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtFecha"
+            android:inputType="date"/>
+     <CheckBox
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Pagado"
+         android:id="@+id/checkPagado"
+         android:layout_marginTop="20dp"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insertar recibo"
+        android:id="@+id/btnInsertar"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de recibos existentes"
+        android:layout_marginLeft="5dp"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ListView"/>
+
+
+</LinearLayout>
